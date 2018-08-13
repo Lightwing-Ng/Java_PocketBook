@@ -14,7 +14,7 @@ public class TestPanel {
         CircleProgressBar circleProgressBar = new CircleProgressBar();
         circleProgressBar.setBackgroundColor(ColorUtil.blueColor);
         circleProgressBar.setProgress(0);
-        JButton jButton = new JButton("点击");
+        JButton jButton = new JButton("Click");
         p.setLayout(new BorderLayout());
         p.add(circleProgressBar, BorderLayout.CENTER);
         p.add(jButton, BorderLayout.SOUTH);

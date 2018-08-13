@@ -17,11 +17,11 @@ public class CategoryListener implements ActionListener {
             // 弹出输入对话框
             String name = JOptionPane.showInputDialog(null);
             if (0 == name.length()) {
-                JOptionPane.showMessageDialog(p, "分类名不能为空");
+                JOptionPane.showMessageDialog(p, "Empty Category Name is not Allowed!");
                 return;
             }
             new CategoryService().add(name);
-            JOptionPane.showMessageDialog(p, "添加成功.");
+            JOptionPane.showMessageDialog(p, "Adding Successfully!");
         }
         if (b == p.bEdit) {
             Category c = p.getSelectedCategory();
@@ -29,26 +29,28 @@ public class CategoryListener implements ActionListener {
                 return;
 
             int id = c.id;
-            String name = JOptionPane.showInputDialog("修改分类名", c.name);
+            String name = JOptionPane.showInputDialog("Modify Category", c.name);
             if (0 == name.length()) {
-                JOptionPane.showMessageDialog(p, "分类名不能为空");
+                JOptionPane.showMessageDialog(p, "Empty Category Name is not Allowed!");
                 return;
             }
             new CategoryService().update(id, name);
-            JOptionPane.showMessageDialog(p, "修改成功.");
+            JOptionPane.showMessageDialog(p, "Modified Successfully!");
         }
+
         if (b == p.bDelete) {
             Category c = p.getSelectedCategory();
             int cid = c.id;
             if (c.recordNumber != 0) {
-                JOptionPane.showMessageDialog(p, "本分类有消费记录存在, 不能删除");
+                JOptionPane.showMessageDialog(p, "Some record exists under this Category.");
                 return;
             }
-            if (JOptionPane.OK_OPTION != JOptionPane.showConfirmDialog(p, "确定要删除？")) {
+            if (JOptionPane.OK_OPTION != JOptionPane.showConfirmDialog(
+                    p, "Are you sure to delete it?"))
                 return;
-            }
+
             new CategoryService().delete(cid);
-            JOptionPane.showMessageDialog(p, "删除成功.");
+            JOptionPane.showMessageDialog(p, "Deleted Successfully!");
         }
     }
 }

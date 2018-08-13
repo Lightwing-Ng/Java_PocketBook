@@ -13,19 +13,18 @@ public class SpendPanel extends JPanel {
     }
 
     public static SpendPanel instance = new SpendPanel();
-    private JLabel lMonthSpend = new JLabel("本月消费");
-    private JLabel lTodaySpend = new JLabel("今日消费");
-    private JLabel lAvgSpendPerDay = new JLabel("日均消费");
-    private JLabel lMonthLeft = new JLabel("本月剩余");
-    private JLabel lDayAvgAvailable = new JLabel("日均可用");
-    private JLabel lMonthLeftDay = new JLabel("距离月末");
-    private JLabel vMonthSpend = new JLabel("￥2300");
-    private JLabel vTodaySpend = new JLabel("￥25");
-    private JLabel vAvgSpendPerDay = new JLabel("￥120");
-    private JLabel vMonthAvailable = new JLabel("￥2084");
-    private JLabel vDayAvgAvailable = new JLabel("￥389");
-    private JLabel vMonthLeftDay = new JLabel("15天");
-
+    private JLabel lMonthSpend = new JLabel("This Month");
+    private JLabel lTodaySpend = new JLabel("Today");
+    private JLabel lAvgSpendPerDay = new JLabel("Average");
+    private JLabel lMonthLeft = new JLabel("Remain");
+    private JLabel lDayAvgAvailable = new JLabel("Average");
+    private JLabel lMonthLeftDay = new JLabel("To End of this Month");
+    private JLabel vMonthSpend = new JLabel("$18,350");
+    private JLabel vTodaySpend = new JLabel("$25");
+    private JLabel vAvgSpendPerDay = new JLabel("$120");
+    private JLabel vMonthAvailable = new JLabel("%2,084");
+    private JLabel vDayAvgAvailable = new JLabel("$389");
+    private JLabel vMonthLeftDay = new JLabel("15 Days");
     private CircleProgressBar bar;
 
     private SpendPanel() {

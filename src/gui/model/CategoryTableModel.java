@@ -9,7 +9,7 @@ import java.util.List;
 
 public class CategoryTableModel implements TableModel {
     public List<Category> cs = new CategoryService().list();
-    private String[] columnNames = new String[]{"分类名称", "消费一览"};
+    private String[] columnNames = new String[]{"Category", "Overview"};
 
     public CategoryTableModel() {
     }
@@ -24,11 +24,10 @@ public class CategoryTableModel implements TableModel {
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         Category category = cs.get(rowIndex);
-        if (0 == columnIndex) {
+        if (0 == columnIndex)
             return category.name;
-        } else {
+        else
             return category.recordNumber;
-        }
     }
 
     @Override

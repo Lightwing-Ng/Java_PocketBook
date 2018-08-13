@@ -11,10 +11,10 @@ public class CategoryComboxModel implements ComboBoxModel<String> {
     private String c;
 
     public CategoryComboxModel() {
-        cs.add("餐饮");
-        cs.add("交通");
-        cs.add("话费");
-        cs.add("住宿");
+        cs.add("Diets");
+        cs.add("Communications");
+        cs.add("Telephone");
+        cs.add("Accommodation");
         c = cs.get(0);
     }
 

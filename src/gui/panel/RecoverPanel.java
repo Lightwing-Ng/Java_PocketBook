@@ -13,7 +13,7 @@ public class RecoverPanel extends JPanel {
     public static RecoverPanel instance = new RecoverPanel();
 
     private RecoverPanel() {
-        JButton brecover = new JButton("恢复");
+        JButton brecover = new JButton("Recover");
         GUIUitl.setColor(ColorUtil.blueColor, brecover);
         this.add(brecover);
     }

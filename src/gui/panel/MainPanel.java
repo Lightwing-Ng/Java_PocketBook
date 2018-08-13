@@ -23,13 +23,13 @@ public class MainPanel extends JPanel {
     public CenterPanel workingPanel;
 
     private MainPanel() {
-        GUIUitl.setImageIcon(bSpend, "home.png", "消费一览");
-        GUIUitl.setImageIcon(bRecord, "record.png", "记一笔");
-        GUIUitl.setImageIcon(bCategory, "category2.png", "消费分类");
-        GUIUitl.setImageIcon(bReport, "report.png", "月消费报表");
-        GUIUitl.setImageIcon(bConfig, "config.png", "设置");
-        GUIUitl.setImageIcon(bBackup, "backup.png", "备份");
-        GUIUitl.setImageIcon(bRecover, "restore.png", "恢复");
+        GUIUitl.setImageIcon(bSpend, "home.png", "Overview");
+        GUIUitl.setImageIcon(bRecord, "record.png", "Note");
+        GUIUitl.setImageIcon(bCategory, "category2.png", "Category");
+        GUIUitl.setImageIcon(bReport, "report.png", "Report");
+        GUIUitl.setImageIcon(bConfig, "config.png", "Setting");
+        GUIUitl.setImageIcon(bBackup, "backup.png", "Backup");
+        GUIUitl.setImageIcon(bRecover, "restore.png", "Recover");
 
         JToolBar tb = new JToolBar();
         tb.add(bSpend);

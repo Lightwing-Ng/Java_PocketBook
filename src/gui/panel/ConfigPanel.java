@@ -16,11 +16,11 @@ public class ConfigPanel extends WorkingPanel {
     public static ConfigPanel instance = new ConfigPanel();
     public JTextField tfBudget = new JTextField("0");
     public JTextField tfMysqlPath = new JTextField("");
-    private JButton bsubmit = new JButton("更新");
+    private JButton bsubmit = new JButton("Update");
 
     private ConfigPanel() {
-        JLabel lBudget = new JLabel("本月预算(¥)");
-        JLabel lMysql = new JLabel("安装目录");
+        JLabel lBudget = new JLabel("Budget($)");
+        JLabel lMysql = new JLabel("Path");
         GUIUitl.setColor(ColorUtil.grayColor, lBudget, lMysql);
         GUIUitl.setColor(ColorUtil.blueColor, bsubmit);
         JPanel pinput = new JPanel();

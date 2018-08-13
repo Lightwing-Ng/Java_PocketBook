@@ -17,12 +17,12 @@ public class RecordPanel extends JPanel {
     public static RecordPanel instance = new RecordPanel();
 
     private RecordPanel() {
-        JLabel lSpend = new JLabel("花费(¥)");
-        JLabel lCategory = new JLabel("分类");
-        JLabel lComment = new JLabel("备注");
-        JLabel lDate = new JLabel("日期");
+        JLabel lSpend = new JLabel("Cost($)");
+        JLabel lCategory = new JLabel("Category");
+        JLabel lComment = new JLabel("Remarks");
+        JLabel lDate = new JLabel("Date");
         GUIUitl.setColor(ColorUtil.grayColor, lSpend, lCategory, lComment, lDate);
-        JButton bSubmit = new JButton("记一笔");
+        JButton bSubmit = new JButton("New");
         GUIUitl.setColor(ColorUtil.blueColor, bSubmit);
 
         JPanel pinput = new JPanel();

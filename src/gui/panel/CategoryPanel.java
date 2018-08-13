@@ -16,9 +16,9 @@ public class CategoryPanel extends WorkingPanel {
     }
 
     public static CategoryPanel instance = new CategoryPanel();
-    public JButton bAdd = new JButton("新增");
-    public JButton bEdit = new JButton("编辑");
-    public JButton bDelete = new JButton("删除");
+    public JButton bAdd = new JButton("Add");
+    public JButton bEdit = new JButton("Modify");
+    public JButton bDelete = new JButton("Delete");
 
     private CategoryTableModel ctm = new CategoryTableModel();
     private JTable t = new JTable(ctm);
@@ -46,7 +46,7 @@ public class CategoryPanel extends WorkingPanel {
     public Category getSelectedCategory() {
         int index = t.getSelectedRow();
         if (index < 0) {
-            JOptionPane.showMessageDialog(p, "没有选择某行");
+            JOptionPane.showMessageDialog(p, "No Selected");
             return null;
         }
         return ctm.cs.get(index);
@@ -76,5 +76,4 @@ public class CategoryPanel extends WorkingPanel {
     public static void main(String[] args) {
         GUIUitl.showPanel(CategoryPanel.instance);
     }
-
 }
