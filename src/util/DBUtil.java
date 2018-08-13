@@ -8,7 +8,7 @@ public class DBUtil {
     static {
         try {
             // 加载驱动
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("lib");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
