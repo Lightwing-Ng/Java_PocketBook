@@ -6,7 +6,7 @@
 
 ![Category](img/CategoryEditing.png)
 
-![Reports](img/Report.png)
+![Reports](img/Report_copy.png)
 
 ![Setting](/Users/lightwingng/Desktop/PoketBook/img/Report copy.png)
 
